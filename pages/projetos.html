@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,22 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <meta name="description" content="Conheça nossos projetos sociais e saiba como contribuir">
 </head>
+
 <body>
     <header>
         <nav>
-            <ul>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="menu">
                 <li><a href="../index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
+                <li class="has-dropdown">
+                    <a href="projetos.html">Projetos</a>
+                    <ul class="dropdown">
+                        <li><a href="#voluntariado">Voluntariado</a></li>
+                        <li><a href="#doacoes">Como doar</a></li>
+                    </ul>
+                </li>
                 <li><a href="cadastro.html">Cadastre-se</a></li>
             </ul>
         </nav>
@@ -21,26 +32,28 @@
     <main>
         <section id="projetos-ativos">
             <h1>Projetos Sociais</h1>
-            
-            <article class="projeto">
-                <h2>Educação para Todos</h2>
-                <figure>
-                    <img src="../assets/images/placeholder.jpg" alt="Crianças em sala de aula" width="300" height="200">
-                    <figcaption>Aulas de reforço escolar para crianças</figcaption>
-                </figure>
-                <p>Projeto focado em oferecer reforço escolar para crianças em situação de vulnerabilidade.</p>
-                <time datetime="2023-01-01">Início: Janeiro 2023</time>
-            </article>
-
-            <article class="projeto">
-                <h2>Horta Comunitária</h2>
-                <figure>
-                    <img src="../assets/images/placeholder.jpg" alt="Horta comunitária" width="300" height="200">
-                    <figcaption>Cultivo de alimentos orgânicos</figcaption>
-                </figure>
-                <p>Desenvolvimento de hortas comunitárias em áreas urbanas.</p>
-                <time datetime="2023-03-15">Início: Março 2023</time>
-            </article>
+            <div class="projetos-lista">
+                <article class="projeto">
+                    <h2>Educação para Todos</h2>
+                    <figure>
+                        <img src="../assets/images/criancas-aula.webp" alt="Crianças em sala de aula" width="300"
+                            height="200">
+                        <figcaption>Aulas de reforço escolar para crianças</figcaption>
+                    </figure>
+                    <p>Projeto focado em oferecer reforço escolar para crianças em situação de vulnerabilidade.</p>
+                    <time datetime="2023-01-01">Início: Janeiro 2023</time>
+                </article>
+                <article class="projeto">
+                    <h2>Horta Comunitária</h2>
+                    <figure>
+                        <img src="../assets/images/hortas-comunitarias.jpg" alt="Horta comunitária" width="300"
+                            height="200">
+                        <figcaption>Cultivo de alimentos orgânicos</figcaption>
+                    </figure>
+                    <p>Desenvolvimento de hortas comunitárias em áreas urbanas.</p>
+                    <time datetime="2023-03-15">Início: Março 2023</time>
+                </article>
+            </div>
         </section>
 
         <section id="voluntariado">
@@ -76,5 +89,7 @@
             <p>&copy; 2023 Sistema de Gerenciamento de ONGs. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="../assets/js/menu.js"></script>
 </body>
+
 </html>
