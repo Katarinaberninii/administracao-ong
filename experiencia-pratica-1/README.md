@@ -31,7 +31,12 @@ git clone https://github.com/Katarinaberninii/administracao-ong.git
 cd administracao-ong/experiencia-pratica-1
 ```
 
-2. Abra o arquivo `index.html` em seu navegador web
+2. Abra o projeto:
+- Abra o arquivo `index.html` em seu navegador
+- Ou utilize um servidor local:
+```bash
+python -m http.server 8000
+```
 
 ## 🔜 Próximas Etapas
 - Implementação do design visual completo
