@@ -379,3 +379,112 @@ footer {
     padding: var(--space-xl) var(--space-sm);
     margin-top: var(--space-lg);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav.active .hamburger {
+        background: transparent;
+    }
+
+    nav.active .hamburger::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    nav.active .hamburger::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: var(--space-sm);
+        background: var(--color-primary);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        display: none;
+        padding: var(--space-sm) 0;
+    }
+
+    nav.active .menu {
+        display: flex;
+    }
+
+    .menu li a {
+        color: #fff;
+        padding: var(--space-xs) var(--space-sm);
+        font-size: var(--font-size-md);
+    }
+
+    .dropdown {
+        position: static;
+        background: var(--color-neutral-200);
+        box-shadow: none;
+        min-width: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .dropdown li a {
+        color: var(--color-primary);
+        background: transparent;
+    }
+
+    main {
+        padding: 0 var(--container-padding);
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: var(--font-size-xl);
+    }
+
+    h2 {
+        font-size: var(--font-size-lg);
+    }
+
+    h3 {
+        font-size: var(--font-size-md);
+    }
+}
+
+/* Breakpoints adicionais */
+@media (max-width: 1200px) {
+    main {
+        max-width: 1000px;
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    main {
+        max-width: 800px;
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        max-width: 600px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    main {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
