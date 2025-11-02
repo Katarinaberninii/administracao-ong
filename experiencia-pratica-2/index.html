@@ -10,9 +10,18 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="menu">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="pages/projetos.html">Projetos</a></li>
+                <li class="has-dropdown">
+                    <a href="pages/projetos.html">Projetos</a>
+                    <ul class="dropdown">
+                        <li><a href="pages/projetos.html#voluntariado">Voluntariado</a></li>
+                        <li><a href="pages/projetos.html#doacoes">Como doar</a></li>
+                    </ul>
+                </li>
                 <li><a href="pages/cadastro.html">Cadastre-se</a></li>
             </ul>
         </nav>
