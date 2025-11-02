@@ -22,10 +22,10 @@ class NavigationComponent extends HTMLElement {
                 </ul>
             </nav>
         `;
-        this.initializeMenu();
+        this.incializarMenu();
     }
 
-    initializeMenu() {
+    incializarMenu() {
         const menuToggle = this.querySelector('.menu-toggle');
         const menu = this.querySelector('.menu');
         
@@ -52,19 +52,19 @@ class NavigationComponent extends HTMLElement {
         });
 
         // Destaca a página atual
-        this.highlightCurrentPage();
+        this.destacarPaginaAtual();
     }
 
-    highlightCurrentPage() {
-        const currentPath = window.location.pathname;
+    destacarPaginaAtual() {
+        const caminhoAtual = window.location.pathname;
         const links = this.querySelectorAll('a');
         
         links.forEach(link => {
             const href = link.getAttribute('href');
-            const currentFile = currentPath.split('/').pop();
-            const linkFile = href.split('/').pop().split('#')[0];
+            const arquivoAtual = caminhoAtual.split('/').pop();
+            const arquivoLink = href.split('/').pop().split('#')[0];
             
-            if (currentFile === linkFile) {
+            if (arquivoAtual === arquivoLink) {
                 link.classList.add('active');
                 const hash = window.location.hash;
                 if (hash && href.includes(hash)) {

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Sistema de Gerenciamento de ONGs</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/form.css">
     <meta name="description" content="Cadastre-se como voluntário ou doador em nossa plataforma">
 </head>
 <body>
@@ -101,8 +102,13 @@
                     </select>
                 </div>
 
-                <button type="submit">Cadastrar</button>
+                <div class="button-group">
+                    <button type="submit">Cadastrar</button>
+                    <button type="button" id="btn-limpar">Limpar Dados</button>
+                </div>
             </form>
+
+            <div id="feedback" class="feedback"></div>
         </section>
     </main>
 
@@ -114,5 +120,6 @@
     <script src="../assets/js/menu.js"></script>
     <script src="../assets/js/masks.js"></script>
     <script src="../assets/components/navigation.js" defer></script>
+    <script src="../assets/js/form-storage.js"></script>
 </body>
 </html>
