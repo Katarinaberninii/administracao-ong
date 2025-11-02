@@ -39,10 +39,15 @@ Esta terceira etapa do projeto foca na implementação de funcionalidades intera
 1. Clone o repositório:
 ```bash
 git clone https://github.com/Katarinaberninii/administracao-ong.git
-cd administracao-ong/experiencia-pratica-1
+cd administracao-ong/experiencia-pratica-3
 ```
 
-2. Abra o arquivo `index.html` em seu navegador web
+2. Abra o projeto:
+- Abra o arquivo `index.html` em seu navegador
+- Ou utilize um servidor local:
+```bash
+python -m http.server 8000
+```
 
 ## 📁 Estrutura do Projeto
 
