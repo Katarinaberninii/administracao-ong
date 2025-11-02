@@ -1,0 +1,26 @@
+/* Estilos para os botões do formulário */
+.form-group button[type="submit"],
+.clear-form {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clear-form {
+    background-color: #E53E3E;
+    color: white;
+    border: none;
+    margin-right: 10px;
+}
+
+.clear-form:hover {
+    background-color: #C53030;
+}
+
+/* Estilo para feedback visual de salvamento automático */
+.form-group input:not(:placeholder-shown),
+.form-group select:not(:placeholder-shown) {
+    border-color: var(--accent-color);
+}
