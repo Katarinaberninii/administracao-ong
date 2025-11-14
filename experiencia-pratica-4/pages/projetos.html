@@ -10,13 +10,18 @@
 </head>
 
 <body>
-    <header>
+    <div class="theme-switcher" role="region" aria-label="Alternância de tema">
+        <button id="theme-light" aria-pressed="true" tabindex="0">Claro</button>
+        <button id="theme-dark" aria-pressed="false" tabindex="0">Escuro</button>
+        <button id="theme-hc" aria-pressed="false" tabindex="0">Alto Contraste</button>
+    </div>
+    <header role="banner">
         <nav-component></nav-component>
     </header>
 
-    <main>
-        <section id="projetos-ativos">
-            <h1>Projetos Sociais</h1>
+    <main id="main-content" tabindex="-1" role="main">
+        <section id="projetos-ativos" aria-labelledby="titulo-projetos">
+            <h1 id="titulo-projetos">Projetos Sociais</h1>
             <div class="projetos-lista">
                 <article class="projeto">
                     <h2>Educação para Todos</h2>
@@ -41,8 +46,8 @@
             </div>
         </section>
 
-        <section id="voluntariado">
-            <h2>Como Ser Voluntário</h2>
+        <section id="voluntariado" aria-labelledby="titulo-voluntariado">
+            <h2 id="titulo-voluntariado">Como Ser Voluntário</h2>
             <p>Você pode fazer a diferença! Junte-se a nossa equipe de voluntários:</p>
             <ul>
                 <li>Preencha o formulário de cadastro</li>
@@ -53,8 +58,8 @@
             <a href="cadastro.html" class="button">Quero ser voluntário</a>
         </section>
 
-        <section id="doacoes">
-            <h2>Como Doar</h2>
+        <section id="doacoes" aria-labelledby="titulo-doacoes">
+            <h2 id="titulo-doacoes">Como Doar</h2>
             <p>Sua contribuição é fundamental para mantermos nossos projetos:</p>
             <article>
                 <h3>Doação Financeira</h3>
@@ -69,13 +74,14 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div>
             <p>&copy; 2023 Sistema de Gerenciamento de ONGs. Todos os direitos reservados.</p>
         </div>
     </footer>
     <script src="../assets/js/menu.js"></script>
     <script src="../assets/components/navigation.js" defer></script>
+    <script src="../assets/js/theme-switcher.js"></script>
 </body>
 
 </html>

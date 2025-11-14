@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,21 @@
     <link rel="stylesheet" href="../assets/css/form.css">
     <meta name="description" content="Cadastre-se como voluntário ou doador em nossa plataforma">
 </head>
+
 <body>
-    <header>
+    <div class="theme-switcher" role="region" aria-label="Alternância de tema">
+        <button id="theme-light" aria-pressed="true" tabindex="0">Claro</button>
+        <button id="theme-dark" aria-pressed="false" tabindex="0">Escuro</button>
+        <button id="theme-hc" aria-pressed="false" tabindex="0">Alto Contraste</button>
+    </div>
+    <header role="banner">
         <nav-component></nav-component>
     </header>
 
-    <main>
-        <section id="cadastro">
-            <h1>Cadastro de Voluntários e Doadores</h1>
-            
+    <main id="main-content" tabindex="-1" role="main">
+        <section id="cadastro" aria-labelledby="titulo-cadastro">
+            <h1 id="titulo-cadastro">Cadastro de Voluntários e Doadores</h1>
+
             <form id="form-cadastro" action="#" method="POST">
                 <div class="form-group">
                     <label for="nome">Nome Completo:</label>
@@ -35,7 +42,8 @@
 
                 <div class="form-group">
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" required maxlength="15" placeholder="(00) 00000-0000">
+                    <input type="tel" id="telefone" name="telefone" required maxlength="15"
+                        placeholder="(00) 00000-0000">
                 </div>
 
                 <div class="form-group">
@@ -112,7 +120,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div>
             <p>&copy; 2023 Sistema de Gerenciamento de ONGs. Todos os direitos reservados.</p>
         </div>
@@ -121,5 +129,7 @@
     <script src="../assets/js/masks.js"></script>
     <script src="../assets/components/navigation.js" defer></script>
     <script src="../assets/js/form-storage.js"></script>
+    <script src="../assets/js/theme-switcher.js"></script>
 </body>
+
 </html>

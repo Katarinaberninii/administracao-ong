@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,25 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <meta name="description" content="Plataforma de gerenciamento para Organizações Não Governamentais (ONGs)">
 </head>
+
 <body>
-    <header>
+    <div class="theme-switcher" role="region" aria-label="Alternância de tema">
+        <button id="theme-light" aria-pressed="true" tabindex="0">Claro</button>
+        <button id="theme-dark" aria-pressed="false" tabindex="0">Escuro</button>
+        <button id="theme-hc" aria-pressed="false" tabindex="0">Alto Contraste</button>
+    </div>
+    <header role="banner">
         <nav-component></nav-component>
     </header>
 
-    <main>
-        <section id="apresentacao">
-            <h1>Transformando Vidas Através da Solidariedade</h1>
+    <main id="main-content" tabindex="-1" role="main">
+        <section id="apresentacao" aria-labelledby="titulo-apresentacao">
+            <h1 id="titulo-apresentacao">Transformando Vidas Através da Solidariedade</h1>
             <p>Juntos podemos fazer a diferença na vida de milhares de pessoas.</p>
         </section>
 
-        <section id="sobre">
-            <h2>Sobre Nossa Organização</h2>
+        <section id="sobre" aria-labelledby="titulo-sobre">
+            <h2 id="titulo-sobre">Sobre Nossa Organização</h2>
             <article>
                 <h3>Nossa Missão</h3>
                 <p>Promover o desenvolvimento social através de ações sustentáveis e inclusivas.</p>
@@ -39,8 +46,8 @@
             </article>
         </section>
 
-        <section id="impacto">
-            <h2>Nosso Impacto</h2>
+        <section id="impacto" aria-labelledby="titulo-impacto">
+            <h2 id="titulo-impacto">Nosso Impacto</h2>
             <div class="impact-numbers">
                 <article>
                     <h3>+1000</h3>
@@ -57,8 +64,8 @@
             </div>
         </section>
 
-        <section id="contato">
-            <h2>Entre em Contato</h2>
+        <section id="contato" aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato">Entre em Contato</h2>
             <address>
                 <p>Email: <a href="mailto:contato@ong.org">contato@ong.org</a></p>
                 <p>Telefone: <a href="tel:+551199999999">(11) 9999-9999</a></p>
@@ -67,12 +74,16 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div>
             <p>&copy; 2023 Sistema de Gerenciamento de ONGs. Todos os direitos reservados.</p>
         </div>
     </footer>
     <script src="assets/js/menu.js"></script>
     <script src="assets/components/navigation.js"></script>
+    <script src="assets/components/navigation.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/theme-switcher.js"></script>
 </body>
+
 </html>

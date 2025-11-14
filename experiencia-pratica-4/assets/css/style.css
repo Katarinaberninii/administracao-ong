@@ -1,5 +1,22 @@
 /* Estilos Globais */
 :root {
+    /* Alto contraste */
+    --color-hc-bg: #000;
+    --color-hc-text: #fff;
+    --color-hc-primary: #FFD600;
+    --color-hc-secondary: #00BFFF;
+    --color-hc-accent: #FF4081;
+    --color-hc-border: #fff;
+    --color-hc-focus: #FFD600;
+    /* Modo escuro */
+    --color-dark-bg: #181A1B;
+    --color-dark-surface: #23272A;
+    --color-dark-text: #F7FAFC;
+    --color-dark-primary: #63B3ED;
+    --color-dark-secondary: #90CDF4;
+    --color-dark-accent: #48BB78;
+    --color-dark-border: #4A5568;
+    --color-dark-focus: #63B3ED;
     /* Paleta de Cores */
     --color-primary: #2C5282;
     --color-secondary: #4299E1;
@@ -47,11 +64,91 @@
     box-sizing: border-box;
 }
 
+/* Foco visível acessível */
+:focus {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
+.theme-dark :focus {
+    outline: 2px solid var(--color-dark-focus);
+}
+
+.theme-hc :focus {
+    outline: 2px solid var(--color-hc-focus);
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--color-neutral-800);
     background-color: var(--color-neutral-100);
+    min-height: 100vh;
+    transition: background 0.2s, color 0.2s;
+}
+
+.theme-dark body {
+    background: var(--color-dark-bg);
+    color: var(--color-dark-text);
+}
+
+.theme-dark header,
+.theme-dark footer {
+    background: var(--color-dark-surface);
+    color: var(--color-dark-text);
+}
+
+.theme-dark nav a,
+.theme-dark .menu li a {
+    color: var(--color-dark-text);
+}
+
+.theme-dark .projeto {
+    background: var(--color-dark-surface);
+    color: var(--color-dark-text);
+}
+
+.theme-hc body {
+    background: var(--color-hc-bg) !important;
+    color: var(--color-hc-text) !important;
+}
+
+.theme-hc header,
+.theme-hc footer {
+    background: var(--color-hc-bg) !important;
+    color: var(--color-hc-primary) !important;
+}
+
+.theme-hc nav a,
+.theme-hc .menu li a {
+    color: var(--color-hc-primary) !important;
+    background: var(--color-hc-bg) !important;
+}
+
+.theme-hc .projeto {
+    background: var(--color-hc-bg) !important;
+    color: var(--color-hc-text) !important;
+    border: 2px solid var(--color-hc-primary);
+}
+
+.theme-hc h1,
+.theme-hc h2,
+.theme-hc h3,
+.theme-hc label {
+    color: var(--color-hc-secondary) !important;
+}
+
+.theme-hc button {
+    background: var(--color-hc-primary) !important;
+    color: var(--color-hc-bg) !important;
+    border: 2px solid var(--color-hc-primary);
+}
+
+.theme-hc input,
+.theme-hc select {
+    background: var(--color-hc-bg) !important;
+    color: var(--color-hc-text) !important;
+    border: 2px solid var(--color-hc-primary);
 }
 
 /* Header */
@@ -189,11 +286,30 @@ nav a {
     padding: var(--space-xs) var(--space-sm);
     border-radius: 4px;
     transition: background 0.2s;
+    /* Contraste mínimo 4.5:1 */
+    background: transparent;
+}
+
+.theme-hc nav a {
+    color: var(--color-hc-primary) !important;
+    background: var(--color-hc-bg) !important;
 }
 
 nav a:hover,
 nav a:focus {
     background: var(--color-secondary);
+}
+
+.theme-dark nav a:hover,
+.theme-dark nav a:focus {
+    background: var(--color-dark-primary);
+    color: var(--color-dark-bg);
+}
+
+.theme-hc nav a:hover,
+.theme-hc nav a:focus {
+    background: var(--color-hc-secondary) !important;
+    color: var(--color-hc-bg) !important;
 }
 
 /* Main Content */
@@ -378,6 +494,55 @@ footer {
     color: #fff;
     padding: var(--space-xl) var(--space-sm);
     margin-top: var(--space-lg);
+}
+
+/* Botão de alternância de tema */
+.theme-switcher {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 100;
+    display: flex;
+    gap: 8px;
+}
+
+.theme-switcher button {
+    background: var(--color-neutral-200);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.theme-dark .theme-switcher button {
+    background: var(--color-dark-surface);
+    color: var(--color-dark-primary);
+    border: 2px solid var(--color-dark-primary);
+}
+
+.theme-hc .theme-switcher button {
+    background: var(--color-hc-bg);
+    color: var(--color-hc-primary);
+    border: 2px solid var(--color-hc-primary);
+}
+
+.theme-switcher button.active {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.theme-dark .theme-switcher button.active {
+    background: var(--color-dark-primary);
+    color: var(--color-dark-bg);
+}
+
+.theme-hc .theme-switcher button.active {
+    background: var(--color-hc-secondary);
+    color: var(--color-hc-bg);
 }
 
 /* Responsive Design */
