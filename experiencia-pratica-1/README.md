@@ -1,9 +1,9 @@
 # Experiência Prática 1 - Sistema de Gerenciamento de ONGs
 
-## 📑 Descrição
+## Descrição
 Este diretório contém a primeira etapa do desenvolvimento do Sistema de Gerenciamento de ONGs, focada na estruturação HTML5 e implementação das páginas base do projeto.
 
-## 🛠️ Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
 ### Páginas
 - **Página Inicial**: Apresentação da ONG, missão, visão e valores
@@ -14,7 +14,7 @@ Este diretório contém a primeira etapa do desenvolvimento do Sistema de Gerenc
 - HTML5 semântico
 - Estrutura de arquivos organizada
 
-## 📁 Estrutura de Arquivos
+## Estrutura de Arquivos
 ```
 experiencia-pratica-1/
 ├── pages/
@@ -23,7 +23,7 @@ experiencia-pratica-1/
 └── index.html
 ```
 
-## 🚀 Como Testar
+## Como Testar
 
 1. Clone o repositório:
 ```bash
@@ -38,6 +38,6 @@ cd administracao-ong/experiencia-pratica-1
 python -m http.server 8000
 ```
 
-## 🔜 Próximas Etapas
+## Próximas Etapas
 - Implementação do design visual completo
 - Adição de interatividade com JavaScript

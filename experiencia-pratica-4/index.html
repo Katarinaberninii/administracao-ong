@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de ONGs</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="description" content="Plataforma de gerenciamento para Organizações Não Governamentais (ONGs)">
+</head>
+
+<body>
+    <div class="theme-switcher" role="region" aria-label="Alternância de tema">
+        <button id="theme-light" aria-pressed="true" tabindex="0">Claro</button>
+        <button id="theme-dark" aria-pressed="false" tabindex="0">Escuro</button>
+        <button id="theme-hc" aria-pressed="false" tabindex="0">Alto Contraste</button>
+    </div>
+    <header role="banner">
+        <nav-component></nav-component>
+    </header>
+
+    <main id="main-content" tabindex="-1" role="main">
+        <section id="apresentacao" aria-labelledby="titulo-apresentacao">
+            <h1 id="titulo-apresentacao">Transformando Vidas Através da Solidariedade</h1>
+            <p>Juntos podemos fazer a diferença na vida de milhares de pessoas.</p>
+        </section>
+
+        <section id="sobre" aria-labelledby="titulo-sobre">
+            <h2 id="titulo-sobre">Sobre Nossa Organização</h2>
+            <article>
+                <h3>Nossa Missão</h3>
+                <p>Promover o desenvolvimento social através de ações sustentáveis e inclusivas.</p>
+            </article>
+            <article>
+                <h3>Nossa Visão</h3>
+                <p>Ser referência em projetos sociais transformadores até 2025.</p>
+            </article>
+            <article>
+                <h3>Nossos Valores</h3>
+                <ul>
+                    <li>Transparência</li>
+                    <li>Compromisso social</li>
+                    <li>Sustentabilidade</li>
+                    <li>Inovação</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="impacto" aria-labelledby="titulo-impacto">
+            <h2 id="titulo-impacto">Nosso Impacto</h2>
+            <div class="impact-numbers">
+                <article>
+                    <h3>+1000</h3>
+                    <p>Pessoas beneficiadas</p>
+                </article>
+                <article>
+                    <h3>50+</h3>
+                    <p>Projetos realizados</p>
+                </article>
+                <article>
+                    <h3>200+</h3>
+                    <p>Voluntários ativos</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato">Entre em Contato</h2>
+            <address>
+                <p>Email: <a href="mailto:contato@ong.org">contato@ong.org</a></p>
+                <p>Telefone: <a href="tel:+551199999999">(11) 9999-9999</a></p>
+                <p>Endereço: Rua Exemplo, 123 - São Paulo/SP</p>
+            </address>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div>
+            <p>&copy; 2023 Sistema de Gerenciamento de ONGs. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/components/navigation.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/theme-switcher.js"></script>
+</body>
+
+</html>
