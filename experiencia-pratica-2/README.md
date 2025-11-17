@@ -1,11 +1,11 @@
 # Experiência Prática 2 - Sistema de Gerenciamento de ONGs
 
-## 🎨 Design e Estilização
+## Design e Estilização
 
 ### Visão Geral
 Esta segunda etapa do projeto focou na implementação do design visual e responsivo do sistema, aplicando conceitos avançados de CSS3 e garantindo uma experiência consistente em diferentes dispositivos.
 
-### 🎯 Objetivos Alcançados
+### Objetivos Alcançados
 
 #### Design Responsivo
 - Layout adaptativo para diferentes tamanhos de tela
@@ -21,7 +21,7 @@ Esta segunda etapa do projeto focou na implementação do design visual e respon
 - Elementos de interface reutilizáveis
 - Componentes modulares
 
-### 📱 Responsividade
+### Responsividade
 
 #### Breakpoints
 - Mobile: < 768px
@@ -35,7 +35,7 @@ Esta segunda etapa do projeto focou na implementação do design visual e respon
 - Tipografia fluida
 - Grid responsivo
 
-### 🎭 Sistema de Cores
+### Sistema de Cores
 
 ```css
 :root {
@@ -47,7 +47,7 @@ Esta segunda etapa do projeto focou na implementação do design visual e respon
 }
 ```
 
-### 📝 Componentes Estilizados
+### Componentes Estilizados
 
 1. **Navegação**
    - Menu responsivo
@@ -74,7 +74,7 @@ Esta segunda etapa do projeto focou na implementação do design visual e respon
    - Imagem + conteúdo
    - Estados interativos
 
-### 🚀 Como Executar
+### Como Executar
 
 1. Clone o repositório:
 ```bash
@@ -94,6 +94,6 @@ python -m http.server 8000
 - Teste em diferentes dispositivos
 - Verifique os breakpoints
 
-### 🔜 Próximos Passos
+### Próximos Passos
 
 1. Implementação de funcionalidades JavaScript
