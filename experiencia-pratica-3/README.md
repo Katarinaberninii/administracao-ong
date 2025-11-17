@@ -1,11 +1,11 @@
 # Experiência Prática 3 - Sistema de Gerenciamento de ONGs
 
-## 📱 Implementação de Funcionalidades Interativas
+## Implementação de Funcionalidades Interativas
 
-### 🎯 Objetivos
+### Objetivos
 Esta terceira etapa do projeto foca na implementação de funcionalidades interativas e dinâmicas utilizando JavaScript, melhorando a experiência do usuário e tornando a aplicação mais funcional.
 
-### 🛠️ Funcionalidades Implementadas
+### Funcionalidades Implementadas
 
 #### 1. Navegação Dinâmica
 - Menu responsivo para dispositivos móveis
@@ -34,7 +34,7 @@ Esta terceira etapa do projeto foca na implementação de funcionalidades intera
 - Simulador de benefícios fiscais
 - Feedback de progresso
 
-## 🚀 Como Testar
+## Como Testar
 
 1. Clone o repositório:
 ```bash
@@ -49,7 +49,7 @@ cd administracao-ong/experiencia-pratica-3
 python -m http.server 8000
 ```
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 experiencia-pratica-3/
